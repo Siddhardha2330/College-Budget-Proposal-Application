@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Form</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 20px auto;
+      width: 90%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header .image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .header .text {
+      margin-left: 20px;
+      text-align: left;
+      color: #ef35ef;
+    }
+
+    .header .text .college-name {
+      font-size: 34px;
+    }
+
+    .header .text .welcome {
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .header .logout-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .navigation {
+      background-color: #6c757d;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 20px auto;
+      width: 90%;
+      text-align: center;
+    }
+
+    .navigation ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+    }
+
+    .navigation a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .navigation a:hover {
+      color: #ffc107;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 20px auto;
+      width: 90%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .budget-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .budget-table th,
+    .budget-table td {
+      padding: 10px;
+      border: 1px solid #dee2e6;
+    }
+
+    .budget-table th {
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    .budget-table td {
+      background-color: #f8f9fa;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="image">
+      <img src="/image.png" alt="Logo">
+    </div>
+    <div class="text">
+      <div class="college-name">
+        <b>Vishnu Institute of Technology</b>
+      </div>
+      <div class="welcome">
+        <b>Welcome user10@gmail.com</b>
+      </div>
+    </div>
+    <a href="/logout">
+      <button class="logout-btn">Log out</button>
+    </a>
+  </header>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="/dashboard">Home</a></li>
+      <li><a href="/sql/budgetform">Budget form</a></li>
+      <li><a href="/sql/budgetinfo">Report</a></li>
+      <li><a href="/sql/budgettotal">Total</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Vishnu Budget Proposal Application</h2>
+    <p>This application is used for storing the expenses for particular branches and can be retrieved at any time. It also calculates total expenses for single and all the branches and can store and retrieve them at any time.</p>
+  </div>
+</body>
+
+</html>
